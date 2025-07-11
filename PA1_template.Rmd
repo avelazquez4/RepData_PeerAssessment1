@@ -16,6 +16,7 @@ library(dplyr)
 library(skimr)
 library(ggplot2)
 library(lubridate)
+library(knitr)
 ```
 
 
@@ -230,6 +231,9 @@ ggplot(avg_steps_imp) +
     x = "5-minute Interval", 
     y= "Average steps"
   )
+
+
+knit2html("PA1_template.md", "PA1_template.html")
 
 ```
 
